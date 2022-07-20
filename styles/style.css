@@ -1,0 +1,398 @@
+/* google font importer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 50px 130px;
+}
+
+/* header part style */
+.header-content {
+    background-color: #161616;
+    display: flex;
+    border-radius: 30px;
+
+}
+
+.header-article {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-article,
+.home-image {
+    padding: 106;
+    margin-top: 111;
+    margin-bottom: 111;
+    margin-left: 106;
+
+
+}
+
+.contents h1,
+.contents p {
+    color: white;
+    margin-left: 106px;
+    padding-left: 0px;
+    margin-top: 150px;
+    margin-bottom: 111px;
+}
+
+.header-title {
+    font-size: 70px;
+}
+
+.link-button {
+    background-color: #DD0000;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 15px;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.link-button:hover {
+    background-color: #000000;
+}
+
+.home-image img {
+    width: 30vw;
+    transform: translate(40px, 7px);
+    transition: all 0.5s ease-out;
+}
+
+
+
+
+
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* menu bar style */
+.menu-bar {
+    background-color: rgb(69, 69, 189);
+    padding: 30px;
+    border-radius: 10px;
+    height: 312px;
+    width: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu button {
+    display: block;
+    margin: 40px 0px;
+    width: 252px;
+    height: 64px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.menu button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-button {
+    background-color: #DD0000 !important;
+}
+
+.menu-button a {
+    color: white !important;
+}
+
+/* menu bar style end */
+
+/* blog style  */
+
+.blog-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 0px 20px;
+
+
+}
+
+.blog {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 311.894px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.country img {
+    padding: 0 10px;
+}
+
+.transfer-btn {
+    display: block;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.comments {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    padding: 20px;
+    text-align: center;
+}
+
+.details p {
+    font-weight: 700;
+}
+
+/* blog part style end  */
+/* main part style end  */
+
+/* footer style  */
+.footer-button button {
+    background-color: #DD0000;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-button {
+    display: none;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    color: white;
+
+}
+
+.footer-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.footer-element-title h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 20px;
+}
+
+.other-menu {
+    display: flex;
+
+}
+
+.other-menu p {
+    margin: 0px 10px;
+    color: #B9B9B9;
+}
+
+.social-icons {
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer part end  */
+
+/* media query starts here  */
+
+/* for mobile devices */
+@media only screen and (max-width:668px) {
+
+    .container {
+        margin: 20px;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .header-article,
+    .home-image {
+        padding: 2px 10px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+
+    .header-article {
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 60vw;
+        transform: translate(40px, 18px);
+        margin-top: 20px;
+    }
+
+    .header-content:hover>.home-image>img {
+        width: 65vw;
+        transform: translate(10px, 20px);
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .menu-bar {
+        margin-bottom: 50px;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+
+    }
+
+    .menu button {
+        border: 1px solid black;
+        margin: 10px 0px;
+        width: 200px;
+    }
+
+    .blog-contents {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 5px;
+        grid-gap: 10px;
+    }
+
+    .other-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 260px;
+    }
+
+    .blog img {
+        width: 100%;
+    }
+
+}
+
+
+/* for tablet devices */
+@media only screen and (min-Width:669px) and (max-width:1080px) {
+
+    /* header part style  */
+    .container {
+        margin: 50px;
+
+    }
+
+    .header-title {
+        font-size: 40px;
+    }
+
+    .header-article,
+    .home-image {
+        padding: 5px 20px;
+    }
+
+    .home-image img {
+        width: 320px;
+        height: 340px;
+        margin-top: 50px;
+        transform: translate(10px, 12px);
+    }
+
+
+
+    /* main part style  */
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .blog-contents {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .menu-bar {
+        margin-bottom: 50px;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+
+    }
+
+
+    /* footer part style  */
+
+    .menu {
+        display: flex;
+
+    }
+
+    .menu button {
+        border: 1px solid black;
+        margin: 0px 10px;
+        width: 200px;
+    }
+
+    .other-menu p {
+        margin: 0px 11px;
+
+    }
+
+    .footer-button {
+        display: flex;
+    }
+}
