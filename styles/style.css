@@ -4,17 +4,23 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+
 }
 
 .container {
-    margin: 50px 130px;
+    
+    width: 1250px;
+    margin: 0 auto;
+    margin-top: 50px
 }
 
-/* header part style */
-.header-content {
+/* header style */
+.header-section {
     background-color: #161616;
     display: flex;
     border-radius: 30px;
+    padding-bottom: 50px
+
 
 }
 
@@ -24,23 +30,16 @@
 
 }
 
-.header-article,
-.home-image {
-    padding: 106;
-    margin-top: 111;
-    margin-bottom: 111;
-    margin-left: 106;
+.header-article, .home-image {
+    padding: 0px 80px;
 
 
 }
 
 .contents h1,
 .contents p {
-    color: white;
-    margin-left: 106px;
-    padding-left: 0px;
-    margin-top: 150px;
-    margin-bottom: 111px;
+    color: #ffffff;
+    
 }
 
 .header-title {
@@ -52,24 +51,21 @@
     border: none;
     padding: 10px 25px;
     margin-top: 15px;
-    color: white;
+    color: #ffffff;
     border-radius: 5px;
-    transition: all 0.5s ease-in-out;
+    transition: 1s ;
+    font-weight: 700;
 }
 
 .link-button:hover {
-    background-color: #000000;
+    background-color: #0000ff;
 }
 
 .home-image img {
     width: 30vw;
-    transform: translate(40px, 7px);
-    transition: all 0.5s ease-out;
+    padding-top : 20px;
+    margin-bottom: 0;
 }
-
-
-
-
 
 
 main {
@@ -80,7 +76,7 @@ main {
 
 /* menu bar style */
 .menu-bar {
-    background-color: rgb(69, 69, 189);
+    background-color: #161616;
     padding: 30px;
     border-radius: 10px;
     height: 312px;
@@ -148,7 +144,7 @@ main {
     padding: 0 10px;
 }
 
-.transfer-btn {
+.transfer-button {
     display: block;
     padding: 4px 16px;
     margin-bottom: 10px;
@@ -261,7 +257,7 @@ hr {
         padding: 2px 10px;
     }
 
-    .header-content {
+    .header-section {
         flex-direction: column;
         padding: 10px 20px;
     }
@@ -273,14 +269,10 @@ hr {
 
     .home-image img {
         width: 60vw;
-        transform: translate(40px, 18px);
         margin-top: 20px;
     }
 
-    .header-content:hover>.home-image>img {
-        width: 65vw;
-        transform: translate(10px, 20px);
-    }
+
 
     main {
         flex-direction: column;
